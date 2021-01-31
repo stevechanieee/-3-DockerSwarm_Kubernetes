@@ -20,7 +20,18 @@ Red Hat OpenShift Container Platform (RHBA-2020:4196) release uses Kubernetes 1.
 
 CRI-O is an implementation of The Kubernetes Container Runtime Interface, which enables the utilization of the Open Container Initiative (OCI) compatible runtimes is referred to as CRI-O. CRI-O can pull from any container registry and supports OCI container images. 
 
-A Docker container image is a lightweight (the container shares the machine's OS system kernel; hence, it does not require as OS per application, and thereby segues to higher server efficiencies), standalone, executable package of software that includes all the dependencies needed to run an application in the chosen computing environment: code, runtime, system tools, system libraries and settings. container images become containers at runtime.
+A Docker container image is a lightweight (the container shares the machine's OS system kernel; hence, it does not require as OS per application, and thereby segues to higher server efficiencies), standalone, executable package of software that includes all the dependencies needed to run an application in the chosen computing environment: code, runtime, system tools, system libraries and settings. Container images become containers at runtime.
+
+
+The Kubelet is the primary "node agent" that runs on each node. The Kubelet describes a pod, as does a PodSpec (a YAML or JSON object that describes a pod). The Kubelet is responsible for maintaining a set of pods, which are composed of one or more containers, on a local system. 
+
+
+JavaScript Object Notation (JSON) is an open standard file format for storing and exchanging data.
+
+YAML Ain't Markup Language (YAML) is a strict superset of JSON and is a file format for storing and exchanging data.
+
+
+Kubernetes does not interact directly with Docker. Rather, Kubelet interacts with a layer entitled, "Dockershim."
 
 
 
