@@ -18,7 +18,9 @@ For Kubernetes v1.20 and higher, Docker will be deprecated.
 
 "OpenShift" typically refers to OpenShift Origin (a.k.a. OKD), which is an open source container application platform (developed by Red Hat) that is based upon Kubernetes (developed by Google) and Docker. "Red Hat OpenShift" refers to the repertoire of container orchestration developed by IBM Red Hat.
 
+OpenShift is a polyglot platform that supports numerous languages.
 
+Source: https://www.zdnet.com/article/red-hat-opens-new-openshift-platform-as-a-service-public-cloud/
 
 Kubernetes is an open source container orchestration project. 
 
