@@ -34,6 +34,14 @@ YAML Ain't Markup Language (YAML) is a strict superset of JSON and is a file for
 Kubernetes does not interact directly with Docker. Rather, Kubelet interacts with a layer entitled, "Dockershim."
 
 
+Kubelet -> Dockershim -> Docker -> Containerd -> Containers
+
+
+Kubelet -> CRI-Containered -> Containerd  (Containered 1.0)
+
+Kubelet -> Containerd (with CRI plugin)   (Containered 1.1)
+
+
 
 "OpenShift" typically refers to OpenShift Origin (a.k.a. OKD), which is an open source container application platform (developed by Red Hat) that is based upon Kubernetes (developed by Google) and Docker. "Red Hat OpenShift" refers to the repertoire of container orchestration developed by IBM Red Hat.
 
