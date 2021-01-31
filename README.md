@@ -41,7 +41,7 @@ Kubelet -> CRI-Containered -> Containerd  (Containered 1.0)
 
 Kubelet -> Containerd (with CRI plugin)   (Containered 1.1)
 
-
+Source: https://kubernetes.io/blog/2018/05/24/kubernetes-containerd-integration-goes-ga/
 
 "OpenShift" typically refers to OpenShift Origin (a.k.a. OKD), which is an open source container application platform (developed by Red Hat) that is based upon Kubernetes (developed by Google) and Docker. "Red Hat OpenShift" refers to the repertoire of container orchestration developed by IBM Red Hat.
 
