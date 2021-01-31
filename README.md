@@ -20,7 +20,7 @@ Red Hat OpenShift Container Platform (RHBA-2020:4196) release uses Kubernetes 1.
 
 CRI-O is an implementation of The Kubernetes Container Runtime Interface, which enables the utilization of the Open Container Initiative (OCI) compatible runtimes is referred to as CRI-O. CRI-O can pull from any container registry and supports OCI container images. 
 
-A Docker container image is a lightweight, standalone, executable package of software that includes all the dependencies needed to run an application in the chosen computing environment: code, runtime, system tools, system libraries and settings. container images become containers at runtime.
+A Docker container image is a lightweight (the container shares the machine's OS system kernel; hence, it does not require as OS per application, and thereby segues to higher server efficiencies), standalone, executable package of software that includes all the dependencies needed to run an application in the chosen computing environment: code, runtime, system tools, system libraries and settings. container images become containers at runtime.
 
 
 
