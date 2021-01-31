@@ -31,7 +31,7 @@ Apart from being a container runtime, it’s also a developer-friendly container
 
 n software engineering, CI/CD or CICD generally refers to the combined practices of continuous integration and either continuous delivery or continuous deployment. CI/CD bridges the gaps between development and operation activities and teams by enforcing automation in building, testing and deployment of applications.
 
-
+CD Is The Practice That Focuses On Producing Release-Ready Software w/ Every Code Change.
 
 
 
