@@ -23,6 +23,20 @@ CRI-O is an implementation of The Kubernetes Container Runtime Interface, which 
 A Docker container image is a lightweight (the container shares the machine's OS system kernel; hence, it does not require as OS per application, and thereby segues to higher server efficiencies), standalone, executable package of software that includes all the dependencies needed to run an application in the chosen computing environment: code, runtime, system tools, system libraries and settings. Container images become containers at runtime.
 
 
+Docker builds an OCI-standard container image. That means a Docker image can run fine on any OCI-compliant container runtime — that includes both containerd and CRI-O.
+
+If you’re using Docker as a container runtime within your Kubernetes cluster, you’re impacted. You’ll have to replace it with a supported container runtime — containerd or CRI-O. Docker containers run perfectly fine on both.
+
+Apart from being a container runtime, it’s also a developer-friendly container engine. So if you’re using Docker for building container images and within your CI/CD pipeline, you can continue to use it.
+
+n software engineering, CI/CD or CICD generally refers to the combined practices of continuous integration and either continuous delivery or continuous deployment. CI/CD bridges the gaps between development and operation activities and teams by enforcing automation in building, testing and deployment of applications.
+
+
+
+
+
+
+
 The Kubelet is the primary "node agent" that runs on each node. The Kubelet describes a pod, as does a PodSpec (a YAML or JSON object that describes a pod). The Kubelet is responsible for maintaining a set of pods, which are composed of one or more containers, on a local system. 
 
 
