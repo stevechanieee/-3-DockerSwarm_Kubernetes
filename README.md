@@ -33,7 +33,7 @@ n software engineering, CI/CD or CICD generally refers to the combined practices
 
 CD Is The Practice That Focuses On Producing Release-Ready Software w/ Every Code Change.
 
-
+Continuous integration (CI) is a software engineering practice where members of a team integrate their work with increasing frequency. ... Continuous delivery (CD) is to packaging and deployment what CI is to build and test.
 
 
 
