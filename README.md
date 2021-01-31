@@ -32,12 +32,5 @@ Kubernetes manages clusters (i.e., groups of containers). Each cluster has two c
 
 
 
-Kubernetes can do, users still need to integrate other components like networking, ingress and load balancing, storage, monitoring, logging, and more. Red Hat OpenShift offers these components with Kubernetes at their core because—by itself— Kubernetes is not enough.
-
-
-
-
-The Community Distribution of Kubernetes that powers Red Hat OpenShift
-
 
 
