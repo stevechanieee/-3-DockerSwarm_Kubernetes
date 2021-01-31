@@ -16,18 +16,19 @@ For Kubernetes v1.20 and higher, Docker will be deprecated.
 
 
 
-"OpenShift" typically refers to OpenShift Origin (a.k.a. OKD), which is an open source container application platform (developed by Red Hat) that is based upon Kubernetes (developed by Google) and Docker. the downstream container orchestration technology derived from the OKD open source project (previously known as OpenShift Origin). "Red Hat OpenShift" refers to the suite of container orchestration products by Red Hat.
+"OpenShift" typically refers to OpenShift Origin (a.k.a. OKD), which is an open source container application platform (developed by Red Hat) that is based upon Kubernetes (developed by Google) and Docker. "Red Hat OpenShift" refers to the repertoire of container orchestration developed by IBM Red Hat.
 
 
 
-Kubernetes is an open source container orchestration project. It helps users manage clustered groups of hosts running Linux containers, which are sets of processes that contain everything needed to run in isolation.
+Kubernetes is an open source container orchestration project. 
 
-Kubernetes was originally developed and designed by engineers at Google—one of the early contributors to Linux container technology—before it was donated to the Cloud Native Computing Foundation (CNCF) in 2015. That means that the CNCF is the entity responsible for maintaining the Kubernetes community, while volunteer contributors and administrators are responsible for Kubernetes development, maintenance, and releases.
-
-Red Hat was one of the first companies to work with Google on Kubernetes—even prior to launch—and has since become the second leading contributor to the Kubernetes project.
+The Cloud Native Computing Foundation (CNCF) maintains the Kubernetes community, and volunteer administrators and volunteers engage in the maintenance, development, and new releases of Kubernetes
 
 
-Kubernetes both manage groups of containers called clusters. Each cluster has 2 parts: a control plane and worker nodes. Containers run in the worker nodes, each of which has its own Linux operating system. The control plane maintains the cluster’s overall state (like what apps are running and which container images are used), while worker nodes do the actual computing work.
+As the developer of Kubernetes, Google is consiered the first leading contributor to the Kubernetes project. Red Hat (which had worked with Google on Kubernetes prior to launch) is considered to be the second leading contributor to the Kubernetes project.
+
+
+Kubernetes manages clusters (i.e., groups of containers). Each cluster has two constituent components: (1) control plane, and (2) worker nodes. Containers reside within the various worker nodes (each with its own Linux operating system). The control plane maintains the cluster’s state (e.g., which apps are running), whereas worker nodes handle the actual computational workload.
 
 
 
