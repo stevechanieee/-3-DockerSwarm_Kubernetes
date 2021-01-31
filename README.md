@@ -18,6 +18,11 @@ For Kubernetes v1.20 and higher, Docker will be deprecated.
 Red Hat OpenShift Container Platform (RHBA-2020:4196) release uses Kubernetes 1.19 (https://v1-19.docs.kubernetes.io/docs/setup/release/notes/) with CRI-O runtime (Docker is deprecated).
 
 
+CRI-O is an implementation of The Kubernetes Container Runtime Interface, which enables the utilization of the Open Container Initiative (OCI) compatible runtimes is referred to as CRI-O. CRI-O can pull from any container registry and supports OCI container images. 
+
+A Docker container image is a lightweight, standalone, executable package of software that includes all the dependencies needed to run an application in the chosen computing environment: code, runtime, system tools, system libraries and settings. container images become containers at runtime.
+
+
 
 "OpenShift" typically refers to OpenShift Origin (a.k.a. OKD), which is an open source container application platform (developed by Red Hat) that is based upon Kubernetes (developed by Google) and Docker. "Red Hat OpenShift" refers to the repertoire of container orchestration developed by IBM Red Hat.
 
