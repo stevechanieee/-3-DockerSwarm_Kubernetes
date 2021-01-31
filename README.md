@@ -15,6 +15,9 @@ Depending upon the requirement, the choice of orchestrator (i.e., Docker Swarm o
 For Kubernetes v1.20 and higher, Docker will be deprecated.
 
 
+Red Hat OpenShift Container Platform (RHBA-2020:4196) release uses Kubernetes 1.19 (https://v1-19.docs.kubernetes.io/docs/setup/release/notes/) with CRI-O runtime (Docker is deprecated).
+
+
 
 "OpenShift" typically refers to OpenShift Origin (a.k.a. OKD), which is an open source container application platform (developed by Red Hat) that is based upon Kubernetes (developed by Google) and Docker. "Red Hat OpenShift" refers to the repertoire of container orchestration developed by IBM Red Hat.
 
