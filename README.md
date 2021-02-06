@@ -20,7 +20,7 @@ For convenience, the more recent Kubernetes release version documentation mainte
 
 |Kubernetes Release Version|Version Documentation Maintenance Status                     |
 |--------------------------|-------------------------------------------------|
-|Kubernetes v1.20          | documentation is maintained.                    |
+|**Kubernetes v1.20**          | documentation is maintained.                    |
 |Kubernetes v1.19          | documentation is no longer actively maintained. |
 |Kubernetes v1.18          | documentation is no longer actively maintained. |
 |Kubernetes v1.17          | documentation is no longer actively maintained  |
@@ -32,7 +32,7 @@ For convenience, the more recent Kubernetes release version documentation mainte
 *Source: https://v1-17.docs.kubernetes.io/docs/home/supported-doc-versions/*<br/>
 *Source: https://v1-16.docs.kubernetes.io/docs/home/supported-doc-versions/*<br/>
 
-Red Hat OpenShift Container Platform (RHBA-2020:4196) release version uses Kubernetes v1.19 (https://v1-19.docs.kubernetes.io/docs/setup/release/notes/) with Container Runtime Interface (CRI) plus Open Container Initiative (OCI) (a.k.a. CRI-O) container runtime (Docker is deprecated).
+Red Hat OpenShift Container Platform (RHBA-2020:4196) release version uses Kubernetes v1.19 (https://v1-19.docs.kubernetes.io/docs/setup/release/notes/) with Container Runtime Interface (CRI) plus Open Container Initiative (OCI) (a.k.a. CRI-O) container runtime (wherein Docker is deprecated).
 
 By way of background information, CRI-O is an implementation of the Kubernetes Container Runtime Interface, which enables the utilization of the OCI compatible runtimes. CRI-O can pull from any container registry (a repository of Docker and OCI images) and supports OCI container images. 
 
