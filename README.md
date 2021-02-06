@@ -43,13 +43,9 @@ For convenience, the more recent Kubernetes release version documentation mainte
 
 "OpenShift" typically refers to OpenShift Origin (a.k.a. OKD), which is an open source container application platform (developed by Red Hat) that is based upon Kubernetes (developed by Google) and Docker. "Red Hat OpenShift" refers to the repertoire of container orchestration tools developed by IBM Red Hat.
 
-OpenShift is considered to be a polyglot platform, which supports numerous languages.
-
 Source: https://www.zdnet.com/article/red-hat-opens-new-openshift-platform-as-a-service-public-cloud/
 
-The IBM Red Hat OpenShift Container Platform (RHBA-2020:4196) release version uses Kubernetes v1.19 (https://v1-19.docs.kubernetes.io/docs/setup/release/notes/) with Container Runtime Interface (CRI) plus Open Container Initiative (OCI) (a.k.a. CRI-O) container runtime (wherein Docker is deprecated).
-
-By way of background information, CRI-O is an implementation of the Kubernetes Container Runtime Interface, which enables the utilization of the OCI compatible runtimes. CRI-O can pull from any container registry (a repository of Docker and OCI images) and supports OCI container images. 
+The IBM Red Hat OpenShift Container Platform (RHBA-2020:4196) release version uses Kubernetes v1.19 (https://v1-19.docs.kubernetes.io/docs/setup/release/notes/) with Container Runtime Interface (CRI) plus Open Container Initiative (OCI) (a.k.a. CRI-O) container runtime. By way of background information, CRI-O is an implementation of the Kubernetes Container Runtime Interface, which enables the utilization of the OCI compatible runtimes. CRI-O can pull from any container registry (a repository of Docker and OCI images) and supports OCI container images. 
 
 *Source: https://www.redhat.com/en/topics/cloud-native-apps/what-is-a-container-registry*
 
