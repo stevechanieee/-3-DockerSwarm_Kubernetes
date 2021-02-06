@@ -61,29 +61,28 @@ Given that Docker is deprecated as a container runtime after v1.20, a replacemen
 
 *Source: https://kubernetes.io/blog/2020/12/02/dont-panic-kubernetes-and-docker/*
 
+To clarify the relationship between containerd, Docker, and Kubernetes, please note that Kubernetes does not interact directly with Docker. Rather, Kubernetes (via Kubelet) interacts with a layer entitled "Dockershim" as shown in Figure 1 below, and a lexicon primer is provided in Figure 2 below.
 
-
-
-The Kubelet is the primary "node agent" that runs on each node. The Kubelet describes a pod, as does a PodSpec (a YAML or JSON object that describes a pod). The Kubelet is responsible for maintaining a set of pods, which are composed of one or more containers, on a local system. 
-
-
-JavaScript Object Notation (JSON) is an open standard file format for storing and exchanging data.
-
-YAML Ain't Markup Language (YAML) is a strict superset of JSON and is a file format for storing and exchanging data.
-
-
-Kubernetes does not interact directly with Docker. Rather, Kubelet interacts with a layer entitled, "Dockershim."
-
+### Figure 1: Kubernetes (via Kubelet) interaction with Docker (via Dockershim) and interaction with Containers (via Containerd) ###
 
 Kubelet -> Dockershim -> Docker -> Containerd -> Containers
 
+### Figure 2: Lexicon Primer ###
 
-Kubelet -> CRI-Containered -> Containerd  (Containered 1.0)
+* The Kubelet is the primary "node agent" that runs on each node. The Kubelet describes a pod, as does a PodSpec (a YAML or JSON object that describes a pod). The Kubelet is responsible for maintaining a set of pods, which are composed of one or more containers, on a local system. 
 
-Kubelet -> Containerd (with CRI plugin)   (Containered 1.1)
+* JavaScript Object Notation (JSON) is an open standard file format for storing and exchanging data.
+
+* YAML Ain't Markup Language (YAML) is a strict superset of JSON and is a file format for storing and exchanging data.
+
+However, Containered (v1.0) was end-of-lifed, and in Containered (v1.1), the CRI-Containerd daemon was refactored (i.e., restructuring the internal structure of an existing body of code without altering the external behavior) to be a CRI plugin, as shown in Figure 2 below.
+
+### Figure 2: CRI-Containerd Refactored
+Original: Kubelet -> CRI-Containerd -> Containerd  (Containerd 1.0)
+
+Refactored: Kubelet -> Containerd (with CRI plugin)   (Containerd 1.1)
 
 Source: https://kubernetes.io/blog/2018/05/24/kubernetes-containerd-integration-goes-ga/
-
 
 
 
