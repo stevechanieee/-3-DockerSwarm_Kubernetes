@@ -12,6 +12,10 @@ Depending upon the preference, Kubernetes apps can be migrated to Docker Swarm, 
 
 Depending upon the requirement, the choice of orchestrator (i.e., Docker Swarm or Kubernetes) can be made explicitly. Alternatively, an Artificial Intelligence (AI) engine can be utilized to make the decision depending upon the need.
 
+Over the past several years, the leadership for container orchestration has shifted from Docker to Kubernetes. In fact, Docker itself adopted Kubernetes and announced native support for Kubernetes at DockerCon Europe in Copenhagen on 17 October 2017. However, Docker's architecture enables users to select the desired orchestration engine (Docker Swarm, Kubernetes) at runtime.
+
+Kubernetes is an open source container orchestration project; moreover, Kubernetes manages clusters (i.e., groups of containers). Each cluster has two constituent components: (1) control plane, and (2) worker nodes. Containers reside within the various worker nodes (each with its own Linux operating system). The control plane maintains the cluster’s state (e.g., which apps are running), whereas worker nodes handle the actual computational workload. The Cloud Native Computing Foundation (CNCF) maintains the Kubernetes community, and volunteer administrators and volunteers engage in the maintenance, development, and new releases of Kubernetes. As the original developer of Kubernetes, Google is considered the first leading contributor to the Kubernetes project. Red Hat (which had worked with Google on Kubernetes prior to launch) is considered to be the second leading contributor to the Kubernetes project.
+
 For Kubernetes v1.20 and higher, Docker will be deprecated.
 
 For convenience, the more recent Kubernetes release version documentation maintenance status is provided below in Table 1:
@@ -32,7 +36,18 @@ For convenience, the more recent Kubernetes release version documentation mainte
 *Source: https://v1-17.docs.kubernetes.io/docs/home/supported-doc-versions/*<br/>
 *Source: https://v1-16.docs.kubernetes.io/docs/home/supported-doc-versions/*<br/>
 
-Red Hat OpenShift Container Platform (RHBA-2020:4196) release version uses Kubernetes v1.19 (https://v1-19.docs.kubernetes.io/docs/setup/release/notes/) with Container Runtime Interface (CRI) plus Open Container Initiative (OCI) (a.k.a. CRI-O) container runtime (wherein Docker is deprecated).
+
+
+
+
+
+"OpenShift" typically refers to OpenShift Origin (a.k.a. OKD), which is an open source container application platform (developed by Red Hat) that is based upon Kubernetes (developed by Google) and Docker. "Red Hat OpenShift" refers to the repertoire of container orchestration tools developed by IBM Red Hat.
+
+OpenShift is considered to be a polyglot platform, which supports numerous languages.
+
+Source: https://www.zdnet.com/article/red-hat-opens-new-openshift-platform-as-a-service-public-cloud/
+
+The IBM Red Hat OpenShift Container Platform (RHBA-2020:4196) release version uses Kubernetes v1.19 (https://v1-19.docs.kubernetes.io/docs/setup/release/notes/) with Container Runtime Interface (CRI) plus Open Container Initiative (OCI) (a.k.a. CRI-O) container runtime (wherein Docker is deprecated).
 
 By way of background information, CRI-O is an implementation of the Kubernetes Container Runtime Interface, which enables the utilization of the OCI compatible runtimes. CRI-O can pull from any container registry (a repository of Docker and OCI images) and supports OCI container images. 
 
@@ -45,14 +60,6 @@ A Docker container image is a lightweight (the container shares the machine's Op
 Given that Docker is deprecated as a container runtime after v1.20, a replacement supported container runtime is needed (e.g., containerd or CRI-O).
 
 *Source: https://kubernetes.io/blog/2020/12/02/dont-panic-kubernetes-and-docker/*
-
-Despite its deprecation, it can still be utilized for building container images, such as within the involved Continuous Integration and Continuous Delivery/Deployment (CI/CD or CICD) pipeline. By way of background information, in software engineering, CI/CD or CICD generally refers to the combined practices of continuous integration and either continuous delivery or continuous deployment. Taken individually, Continuous integration (CI) is a software engineering practice whereby members of a team integrate their work with increasing frequency, and Continuous Delivery (CD) is a software engineering practice whereby members of a team focus on packaging and deploying what CI has built and tested. As a Splunk blog article re-cites from Wiki, "CI/CD bridges the gaps between development and operational activities and teams by enforcing automation in building, testing, and deployment of applications." In fact, CI/CD has become a Software Development (Dev) and Information Technology (IT) Operations (Ops) (collectively, DevOps) best practice.
-
-*Source: https://www.splunk.com/en_us/blog/devops/observability-with-ci-cd-in-a-developer-world.html*
-
-In essence, CI/CD is a practice of producing release-ready software with every code change.
-
-*Source: https://stackify.com/continuous-delivery-vs-continuous-deployment-vs-continuous-integration/*
 
 
 
@@ -77,23 +84,20 @@ Kubelet -> Containerd (with CRI plugin)   (Containered 1.1)
 
 Source: https://kubernetes.io/blog/2018/05/24/kubernetes-containerd-integration-goes-ga/
 
-"OpenShift" typically refers to OpenShift Origin (a.k.a. OKD), which is an open source container application platform (developed by Red Hat) that is based upon Kubernetes (developed by Google) and Docker. "Red Hat OpenShift" refers to the repertoire of container orchestration developed by IBM Red Hat.
-
-OpenShift is a polyglot platform that supports numerous languages.
-
-Source: https://www.zdnet.com/article/red-hat-opens-new-openshift-platform-as-a-service-public-cloud/
-
-Kubernetes is an open source container orchestration project. 
-
-The Cloud Native Computing Foundation (CNCF) maintains the Kubernetes community, and volunteer administrators and volunteers engage in the maintenance, development, and new releases of Kubernetes
 
 
-As the developer of Kubernetes, Google is consiered the first leading contributor to the Kubernetes project. Red Hat (which had worked with Google on Kubernetes prior to launch) is considered to be the second leading contributor to the Kubernetes project.
+
+Despite its deprecation, it can still be utilized for building container images, such as within the involved Continuous Integration and Continuous Delivery/Deployment (CI/CD or CICD) pipeline. By way of background information, in software engineering, CI/CD or CICD generally refers to the combined practices of continuous integration and either continuous delivery or continuous deployment. Taken individually, Continuous integration (CI) is a software engineering practice whereby members of a team integrate their work with increasing frequency, and Continuous Delivery (CD) is a software engineering practice whereby members of a team focus on packaging and deploying what CI has built and tested. As a Splunk blog article re-cites from Wiki, "CI/CD bridges the gaps between development and operational activities and teams by enforcing automation in building, testing, and deployment of applications." In fact, CI/CD has become a Software Development (Dev) and Information Technology (IT) Operations (Ops) (collectively, DevOps) best practice.
+
+*Source: https://www.splunk.com/en_us/blog/devops/observability-with-ci-cd-in-a-developer-world.html*
+
+In essence, CI/CD is a practice of producing release-ready software with every code change.
+
+*Source: https://stackify.com/continuous-delivery-vs-continuous-deployment-vs-continuous-integration/*
 
 
-Kubernetes manages clusters (i.e., groups of containers). Each cluster has two constituent components: (1) control plane, and (2) worker nodes. Containers reside within the various worker nodes (each with its own Linux operating system). The control plane maintains the cluster’s state (e.g., which apps are running), whereas worker nodes handle the actual computational workload.
 
 
-The attention surrounding container orchestration has shifted from Docker to Kubernetes. In fact, Docker itself adopted Kubernetes and announced native support for Kubernetes at DockerCon Europe in Copenhagen on 17 October 2017. However, Docker's architecture enables users to select the desired orchestration engine (Docker Swarm, Kubernetes) at run time.
+
 
 
