@@ -46,12 +46,13 @@ Given that Docker is deprecated as a container runtime after v1.20, a replacemen
 
 *Source: https://kubernetes.io/blog/2020/12/02/dont-panic-kubernetes-and-docker/*
 
-Despite its deprecation, it can still be utilized for building container images, such as within the involved Continuous Integration and Continuous Delivery/Deployment (CI/CD or CICD) pipeline. By way of background information, in software engineering, CI/CD or CICD generally refers to the combined practices of continuous integration and either continuous delivery or continuous deployment. "CI/CD bridges the gaps between development and operational activities and teams by enforcing automation in building, testing, and deployment of applications."
+Despite its deprecation, it can still be utilized for building container images, such as within the involved Continuous Integration and Continuous Delivery/Deployment (CI/CD or CICD) pipeline. By way of background information, in software engineering, CI/CD or CICD generally refers to the combined practices of continuous integration and either continuous delivery or continuous deployment. As a Splunk blog article re-cites from Wiki, "CI/CD bridges the gaps between development and operational activities and teams by enforcing automation in building, testing, and deployment of applications." 
 
 *Source: https://www.splunk.com/en_us/blog/devops/observability-with-ci-cd-in-a-developer-world.html*
 
-CD Is The Practice That Focuses On Producing Release-Ready Software w/ Every Code Change.
+In essence CICD is a practice of producing release-ready software w/ every code change.
 
+*Source: https://stackify.com/continuous-delivery-vs-continuous-deployment-vs-continuous-integration/*
 Continuous integration (CI) is a software engineering practice where members of a team integrate their work with increasing frequency. ... Continuous delivery (CD) is to packaging and deployment what CI is to build and test.
 
 CI and CD are two acronyms frequently used in modern development practices and DevOps. CI stands for continuous integration, a fundamental DevOps best
