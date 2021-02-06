@@ -1,35 +1,54 @@
+# DSK #
 
-
-
-Utilizing Two Orchestrators: Docker Swarm &amp; Kubernetes (TO_DSK)
+The experimentation architecture utilizes two orchestrators: Docker Swarm and Kubernetes (DSK)
 
 Docker Swarm, by default, prioritizes isolation between containers. This is construed by some to represent higher security.
 
-Kubernetes prioritizes communication between multiple containers in the same pod. This is construed by some to represent lower security.
+Kubernetes prioritizes communication between multiple containers within the same pod. This is construed by some to represent higher efficacy, but lower security.
+
+*Source: https://medium.com/opstalk/top-considerations-for-docker-ce-vs-ee-and-kubernetes-vs-swarm-9563a9c623ff*
 
 Depending upon the preference, Kubernetes apps can be migrated to Docker Swarm, and vice versa.
 
-Depending upon the requirement, the choice of orchestrator (i.e., Docker Swarm or Kubernetes) can be made.
-
+Depending upon the requirement, the choice of orchestrator (i.e., Docker Swarm or Kubernetes) can be made explicitly. Alternatively, an Artificial Intelligence (AI) engine can be utilized to make the decision depending upon the need.
 
 For Kubernetes v1.20 and higher, Docker will be deprecated.
 
+For convenience, the more recent Kubernetes release version documentation maintenance status is provided below in Table 1:
 
-Red Hat OpenShift Container Platform (RHBA-2020:4196) release uses Kubernetes 1.19 (https://v1-19.docs.kubernetes.io/docs/setup/release/notes/) with CRI-O runtime (Docker is deprecated).
+### Table 1: Kubernetes Release Version Documentation Maintenance Status ###
 
+|Kubernetes Release Version|Version Documentation Maintenance Status                     |
+|--------------------------|-------------------------------------------------|
+|Kubernetes v1.20          | documentation is maintained.                    |
+|Kubernetes v1.19          | documentation is no longer actively maintained. |
+|Kubernetes v1.18          | documentation is no longer actively maintained. |
+|Kubernetes v1.17          | documentation is no longer actively maintained  |
+|Kubernetes v1.16          | documentation is no longer actively maintained. |
 
-CRI-O is an implementation of The Kubernetes Container Runtime Interface, which enables the utilization of the Open Container Initiative (OCI) compatible runtimes is referred to as CRI-O. CRI-O can pull from any container registry and supports OCI container images. 
+*Source: https://kubernetes.io/docs/home/supported-doc-versions/*<br/>
+*Source: https://v1-19.docs.kubernetes.io/docs/home/supported-doc-versions/*<br/>
+*Source: https://v1-18.docs.kubernetes.io/docs/home/supported-doc-versions/*<br/>
+*Source: https://v1-17.docs.kubernetes.io/docs/home/supported-doc-versions/*<br/>
+*Source: https://v1-16.docs.kubernetes.io/docs/home/supported-doc-versions/*<br/>
 
-A Docker container image is a lightweight (the container shares the machine's OS system kernel; hence, it does not require as OS per application, and thereby segues to higher server efficiencies), standalone, executable package of software that includes all the dependencies needed to run an application in the chosen computing environment: code, runtime, system tools, system libraries and settings. Container images become containers at runtime.
+Red Hat OpenShift Container Platform (RHBA-2020:4196) release version uses Kubernetes v1.19 (https://v1-19.docs.kubernetes.io/docs/setup/release/notes/) with Container Runtime Interface (CRI) plus Open Container Initiative (OCI) (a.k.a. CRI-O) container runtime (Docker is deprecated).
 
+By way of background information, CRI-O is an implementation of the Kubernetes Container Runtime Interface, which enables the utilization of the OCI compatible runtimes. CRI-O can pull from any container registry (a repository of Docker and OCI images) and supports OCI container images. 
 
-Docker builds an OCI-standard container image. That means a Docker image can run fine on any OCI-compliant container runtime — that includes both containerd and CRI-O.
+*Source: https://www.redhat.com/en/topics/cloud-native-apps/what-is-a-container-registry*
 
-If you’re using Docker as a container runtime within your Kubernetes cluster, you’re impacted. You’ll have to replace it with a supported container runtime — containerd or CRI-O. Docker containers run perfectly fine on both.
+A Docker container image is a lightweight (the container shares the machine's Operating System or OS system kernel; hence, it does not require an OS per application, and thereby segues to higher server efficiencies), standalone, executable package of software that includes all the dependencies needed to run an application in the chosen computing environment: code, runtime, system tools, system libraries, and settings. Container images become containers at runtime (e.g., a Docker image can run on any OCI-compliant container runtin, such as CRI-O.
 
-Apart from being a container runtime, it’s also a developer-friendly container engine. So if you’re using Docker for building container images and within your CI/CD pipeline, you can continue to use it.
+*Source: https://www.docker.com/resources/what-container*
 
-n software engineering, CI/CD or CICD generally refers to the combined practices of continuous integration and either continuous delivery or continuous deployment. CI/CD bridges the gaps between development and operation activities and teams by enforcing automation in building, testing and deployment of applications.
+Given that Docker is deprecated as a container runtime after v1.20, a replacement supported container runtime is needed (e.g., containerd or CRI-O).
+
+*Source: https://kubernetes.io/blog/2020/12/02/dont-panic-kubernetes-and-docker/*
+
+Despite its deprecation, it can still be utilized for building container images, such as within the involved Continuous Integration and Continuous Delivery/Deployment (CI/CD or CICD) pipeline. By way of background information, in software engineering, CI/CD or CICD generally refers to the combined practices of continuous integration and either continuous delivery or continuous deployment. "CI/CD bridges the gaps between development and operational activities and teams by enforcing automation in building, testing, and deployment of applications."
+
+*Source: https://www.splunk.com/en_us/blog/devops/observability-with-ci-cd-in-a-developer-world.html*
 
 CD Is The Practice That Focuses On Producing Release-Ready Software w/ Every Code Change.
 
