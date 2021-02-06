@@ -1,6 +1,6 @@
 # DSK #
 
-The experimentation architecture utilizes two orchestrators: Docker Swarm and Kubernetes (DSK)
+The experimentation architecture utilizes two orchestrators: Docker Swarm and Kubernetes (DSK).
 
 Docker Swarm, by default, prioritizes isolation between containers. This is construed by some to represent higher security.
 
