@@ -71,9 +71,9 @@ Kubelet -> Dockershim -> Docker -> Containerd -> Containers
 However, Containered (v1.0) was end-of-lifed, and in Containered (v1.1), the CRI-Containerd daemon was refactored (i.e., restructuring the internal structure of an existing body of code without altering the external behavior) to be a CRI plugin, as shown in Figure 3 below.
 
 ### Figure 3: CRI-Containerd Refactored
-Original: Kubelet -> CRI-Containerd -> Containerd  (Containerd 1.0)
+Original: Kubelet -> CRI-Containerd -> Containerd -> Containers  (Containerd 1.0)
 
-Refactored: Kubelet -> Containerd (with CRI plugin)   (Containerd 1.1)
+Refactored: Kubelet -> Containerd (with CRI plugin) -> Containers  (Containerd 1.1)
 
 *Source: https://kubernetes.io/blog/2018/05/24/kubernetes-containerd-integration-goes-ga/*
 
