@@ -18,6 +18,8 @@ Kubernetes is an open source container orchestration project; moreover, Kubernet
 
 For Kubernetes v1.20 and higher, Docker will be deprecated.
 
+*Source: https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.20.md#deprecation*
+
 For convenience, the more recent Kubernetes release version documentation maintenance status is provided below in Table 1:
 
 ### Table 1: Kubernetes Release Version Documentation Maintenance Status ###
@@ -49,11 +51,11 @@ The IBM Red Hat OpenShift Container Platform (RHBA-2020:4196) release version us
 
 *Source: https://www.redhat.com/en/topics/cloud-native-apps/what-is-a-container-registry*
 
-A Docker container image is a lightweight (the container shares the machine's Operating System or OS system kernel; hence, it does not require an OS per application, and thereby segues to higher server efficiencies), standalone, executable package of software that includes all the dependencies needed to run an application in the chosen computing environment: code, runtime, system tools, system libraries, and settings. Container images become containers at runtime (e.g., a Docker image can run on any OCI-compliant container runtin, such as CRI-O.
+A Docker container image is a lightweight (the container shares the machine's Operating System or OS system kernel; hence, it does not require an OS per application, and thereby segues to higher server efficiencies), standalone, executable package of software that includes all the dependencies needed to run an application in the chosen computing environment: code, runtime, system tools, system libraries, and settings. Container images become containers at runtime (e.g., a Docker image can run on any OCI-compliant container runtime, such as CRI-O).
 
 *Source: https://www.docker.com/resources/what-container*
 
-Given that Docker is deprecated as a container runtime after v1.20, a replacement supported container runtime is needed (e.g., containerd or CRI-O).
+Given that Docker is deprecated as a container runtime from Kubernetes v1.20 and higher, a replacement supported container runtime is needed (e.g., containerd or CRI-O).
 
 *Source: https://kubernetes.io/blog/2020/12/02/dont-panic-kubernetes-and-docker/*
 
