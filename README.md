@@ -38,11 +38,6 @@ For convenience, the more recent Kubernetes release version documentation mainte
 *Source: https://v1-17.docs.kubernetes.io/docs/home/supported-doc-versions/*<br/>
 *Source: https://v1-16.docs.kubernetes.io/docs/home/supported-doc-versions/*<br/>
 
-
-
-
-
-
 "OpenShift" typically refers to OpenShift Origin (a.k.a. OKD), which is an open source container application platform (developed by Red Hat) that is based upon Kubernetes (developed by Google) and Docker. "Red Hat OpenShift" refers to the repertoire of container orchestration tools developed by IBM Red Hat.
 
 Source: https://www.zdnet.com/article/red-hat-opens-new-openshift-platform-as-a-service-public-cloud/
@@ -80,9 +75,7 @@ Original: Kubelet -> CRI-Containerd -> Containerd  (Containerd 1.0)
 
 Refactored: Kubelet -> Containerd (with CRI plugin)   (Containerd 1.1)
 
-Source: https://kubernetes.io/blog/2018/05/24/kubernetes-containerd-integration-goes-ga/
-
-
+*Source: https://kubernetes.io/blog/2018/05/24/kubernetes-containerd-integration-goes-ga/*
 
 Despite its deprecation, it can still be utilized for building container images, such as within the involved Continuous Integration and Continuous Delivery/Deployment (CI/CD or CICD) pipeline. By way of background information, in software engineering, CI/CD or CICD generally refers to the combined practices of Continuous Integration (CI) and either Continuous Delivery (CD) or Continuous Deployment (CD). Taken individually, CI is a software engineering practice whereby members of a team integrate their work with increasing frequency, and CD is a software engineering practice whereby members of a team focus on packaging and deploying what CI has built and tested. As a Splunk blog article re-cites from Wiki, "CI/CD bridges the gaps between development and operational activities and teams by enforcing automation in building, testing, and deployment of applications." In fact, CI/CD has become a Software Development (Dev) and Information Technology (IT) Operations (Ops) (collectively, DevOps) best practice.
 
