@@ -85,7 +85,12 @@ In summary, CI/CD is a practice of producing release-ready software with every c
 
 *Source: https://stackify.com/continuous-delivery-vs-continuous-deployment-vs-continuous-integration/*
 
+Docker Engine (described by Docker as "the underlying tooling/client that enables users to easily build, manage, share and run their container objects on Linux") is built on top of containerd. The next release of Docker Community Edition (Docker CE) will use containerd version 1.1. 
 
+*Source: https://www.docker.com/blog/introducing-docker-engine-20-10/*
+*Source: https://kubernetes.io/blog/2018/05/24/kubernetes-containerd-integration-goes-ga/*
+
+### Interim Finding ###
 
 
 
