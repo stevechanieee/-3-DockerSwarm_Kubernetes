@@ -59,7 +59,7 @@ Given that Docker is deprecated as a container runtime from Kubernetes v1.20 and
 
 *Source: https://kubernetes.io/blog/2020/12/02/dont-panic-kubernetes-and-docker/*
 
-To clarify the relationship between containerd, Docker, and Kubernetes, please note that Kubernetes does not interact directly with Docker. Rather, Kubernetes (via Kubelet) interacts with a layer entitled "Dockershim" as shown in Figure 1 below, and a lexicon primer is provided in Figure 2 below.
+To clarify the relationship between containerd, Docker, and Kubernetes, please note that Kubernetes does not interact directly with Docker. Rather, Kubernetes (via Kubelet) interacts with a layer entitled "Dockershim" as shown in Figure 1 below, and a lexicon primer is provided in Figure 2 below. In addition, please note that the Kubelet is the lowest level component in Kubernetes; it can be compared to a process watcher, but focused on running containers. A pod is a collection of containers, and the pod is the unit of execution for Kubernetes.
 
 ### Figure 1: Kubernetes (via Kubelet) interaction with Docker (via Dockershim) and interaction with Containers (via Containerd) ###
 
