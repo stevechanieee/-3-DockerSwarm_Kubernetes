@@ -84,11 +84,11 @@ Source: https://kubernetes.io/blog/2018/05/24/kubernetes-containerd-integration-
 
 
 
-Despite its deprecation, it can still be utilized for building container images, such as within the involved Continuous Integration and Continuous Delivery/Deployment (CI/CD or CICD) pipeline. By way of background information, in software engineering, CI/CD or CICD generally refers to the combined practices of continuous integration and either continuous delivery or continuous deployment. Taken individually, Continuous integration (CI) is a software engineering practice whereby members of a team integrate their work with increasing frequency, and Continuous Delivery (CD) is a software engineering practice whereby members of a team focus on packaging and deploying what CI has built and tested. As a Splunk blog article re-cites from Wiki, "CI/CD bridges the gaps between development and operational activities and teams by enforcing automation in building, testing, and deployment of applications." In fact, CI/CD has become a Software Development (Dev) and Information Technology (IT) Operations (Ops) (collectively, DevOps) best practice.
+Despite its deprecation, it can still be utilized for building container images, such as within the involved Continuous Integration and Continuous Delivery/Deployment (CI/CD or CICD) pipeline. By way of background information, in software engineering, CI/CD or CICD generally refers to the combined practices of Continuous Integration (CI) and either Continuous Delivery (CD) or Continuous Deployment (CD). Taken individually, CI is a software engineering practice whereby members of a team integrate their work with increasing frequency, and CD is a software engineering practice whereby members of a team focus on packaging and deploying what CI has built and tested. As a Splunk blog article re-cites from Wiki, "CI/CD bridges the gaps between development and operational activities and teams by enforcing automation in building, testing, and deployment of applications." In fact, CI/CD has become a Software Development (Dev) and Information Technology (IT) Operations (Ops) (collectively, DevOps) best practice.
 
 *Source: https://www.splunk.com/en_us/blog/devops/observability-with-ci-cd-in-a-developer-world.html*
 
-In essence, CI/CD is a practice of producing release-ready software with every code change.
+In summary, CI/CD is a practice of producing release-ready software with every code change.
 
 *Source: https://stackify.com/continuous-delivery-vs-continuous-deployment-vs-continuous-integration/*
 
