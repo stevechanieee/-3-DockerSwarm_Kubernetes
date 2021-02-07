@@ -73,9 +73,9 @@ Kubelet -> Dockershim -> Docker -> Containerd -> Containers
 
 * YAML Ain't Markup Language (YAML) is a strict superset of JSON and is a file format for storing and exchanging data.
 
-However, Containered (v1.0) was end-of-lifed, and in Containered (v1.1), the CRI-Containerd daemon was refactored (i.e., restructuring the internal structure of an existing body of code without altering the external behavior) to be a CRI plugin, as shown in Figure 2 below.
+However, Containered (v1.0) was end-of-lifed, and in Containered (v1.1), the CRI-Containerd daemon was refactored (i.e., restructuring the internal structure of an existing body of code without altering the external behavior) to be a CRI plugin, as shown in Figure 3 below.
 
-### Figure 2: CRI-Containerd Refactored
+### Figure 3: CRI-Containerd Refactored
 Original: Kubelet -> CRI-Containerd -> Containerd  (Containerd 1.0)
 
 Refactored: Kubelet -> Containerd (with CRI plugin)   (Containerd 1.1)
