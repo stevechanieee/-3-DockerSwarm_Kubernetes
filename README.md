@@ -90,9 +90,13 @@ In summary, CI/CD is a practice of producing release-ready software with every c
 
 *Source: https://stackify.com/continuous-delivery-vs-continuous-deployment-vs-continuous-integration/*
 
+Given the continued benefit of Docker for CI/CD and the fact that both Docker and CRI-O are underpinned by containered, it seems that both have a value-added proposition. Moreover, Docker, CRI-O, and containerd all depend on **runC** at the lowest level to effectuate the running of containers.
+
+*Source: https://computingforgeeks.com/docker-vs-cri-o-vs-containerd/*
+
 ### Interim Finding ###
 
-
+* A multi-faceted approach involving both Docker and CRI-O seems prudent, particularly given their mutual **runC** dependency, and the fact that Docker images are more prevalent for certain facets of the architectural stack.
 
 
 
