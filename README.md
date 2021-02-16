@@ -1,4 +1,4 @@
-# DSK #
+# Docker Swarm, Kubernetes #
 
 The experimentation architecture utilizes two container orchestration platforms: Docker Swarm (a.k.a. Swarm) and Kubernetes (collectively, SK).
 
